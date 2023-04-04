@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+.linear-gradient-background {
+    background-image: linear-gradient(
+     rgb(10, 10, 10),
+     rgb(254, 8, 201));
+  }
+
+
+body {
+    font-family: arial;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    
+}
+
+
+#wrapper {
+    position: absolute;
+    left: 23%;
+    top: 15%;
+    bottom: 10%;
+    width: 600px;
+    height: 500px;
+    padding: 10px;
+    box-shadow: 0 8px 8px 0 rgb(58, 1, 55);
+   
+}
+      
+
+.wrapper-color {
+        background-color: white;
+        height: 150px;
+        max-width: 100%;
+    }
+
+#timeClock {
+    float: right;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 { 
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#quizQuestions {
+    text-align: center;
+}
+
+button {
+    background: rgb(255, 4, 217);
+    box-shadow: 0 4px 4px 0 rgb(58, 1, 55);
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+
+button:hover {   
+    background-color: rgb(80, 78, 78);
+    color: white;
+
+}
+
+.start-btn {
+    margin-left: 10px;
+}
+
+li {
+
+background-color:rgb(240, 1, 192);
+margin-top: 20px;
+margin-left: 150px;
+padding: 5px 15px;
+width: 50%;
+font-size: 18px;
+color: white;
+box-shadow: 0 4px 4px 0 rgb(75, 1, 56);
+}
+
+li:hover {
+
+    background-color: rgb(20, 19, 19);
+    color: white;
+}
+
+.high-score-btn, .back-btn {
+    text-decoration-line: none;
+    color: black;
+}
+
+#divElement {
+    margin-top: 20px;
+
+}
+
+input { 
+    margin-bottom: 20px;
+    width: 30%;
+    border: 1px solid black;
+}
+
+#submit { 
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#pElement, #p2Element {
+ margin-top: 10px;
+} 
+
+
+  @media (max-width: 690px) {
+    .start-btn, .high-score-btn {
+      font-size: 1rem;
+      margin: 16px 0px 0px 0px;
+      padding: 10px 15px;
+    }
+}
+  
+
+  @media (max-width: 500px) {
+    .start-btn, .high-score-btn {
+      font-size: 0.8rem;
+    }
+  }
+  
