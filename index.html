@@ -1,45 +1,50 @@
-<!-- create head and body -->
-<!-- head include links to css, metas, title -->
-<!-- body include divs h(1,2,3,4,), paragraphs, buttons and also links to script file -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Code Quiz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+<body>
+    <header>
+        <h1>JavaScript Fundamentals Quiz</h1>
+        <button id="start">Start</button>
+    </header>
+    <section id="container">
+        <p id= "question-box"></p>
+        <ul id="list">
+            <li><button id="answer1"></button></li>
+            <li><button id="answer2"></button></li>
+            <li><button id="answer3"></button></li>
+            <li><button id="answer4"></button></li>
+        </ul>
+    </section>
+    <section id="save-score">
+        <h2>Your score: <span id= "final-score"></span></h2>
+        <form>
+            <label>Initials: </label>
+            <input type="text" id= "initials">
+            <input type="submit" id="submit">
+        </form>
+    </section>
 
-<body class="linear-gradient-background">
-    <!--created a wrapper to for quiz content-->
-    <div class="wrapper-color" id="wrapper">
-        <div>
-            <div id="timeInterval"></div>
-            <header>
-                <br>
-                <h1>Code Quiz</h1>
-                <br>
-            </header>
-        </div>
-        <!--Div will contain quiz questions-->
-        <div id="quizQuestions">
-            <p>Try to answer the following questions within the time limit. Incorrect answers will deduct 10 seconds off the clock!</p>
-            <br>
-            <!--user prompted to select quiz choices-->
-            <ul id="quizChoices"></ul>
-            <br>
-            <!--button to start button and activates time clock-->
-            <button id="startInterval" class="start-btn">Start Quiz</button>
-            <!--button with link to highscore -->
-            <a href="index2.html" class="high-score-btn"><button>View Highscores</button>
-            <br>
-        </div>
+    <section id="leaderboard">
+        <button id="reset-scores">Reset Scores</button>
+        <div id="leaderboard-box">
+        <ul id="initials-column">
+            <li>Initials</li>
+        </ul>
+        <ul id="scores-column">
+            <li>Scores</li>
+        </ul>
     </div>
-    
-    
-    <script src="script.js"></script>
-
+    <p>Refresh page to take quiz again</p>
+    </section>
+    <section>
+        <p id= "time-remaining">Seconds remaining: <br><span id="timer" data-seconds="90"></span></p>
+    </section>
+    <script src="assets/js/script.js" ></script>
 </body>
 </html>
